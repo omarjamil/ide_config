@@ -1,13 +1,13 @@
 # create softlinks 
-ln -s ~/dotfiles/bash ~/.bash
-ln -s ~/dotfiles/bashrc ~/.bashrc
-ln -s ~/dotfiles/zsh ~/.zsh
-ln -s ~/dotfiles/zshrc ~/.zshrc
-ln -s ~/dotfiles/bash_profile ~/.bash_profile
-ln -s ~/dotfiles/shell ~/.shell
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/dotfiles/nvim ~/.config/nvim
-ln -s ~/dotfiles/zsh/p10k.zsh ~/.p10k.zsh
+ln -s ~/ide_config/bash ~/.bash
+ln -s ~/ide_config/bashrc ~/.bashrc
+ln -s ~/ide_config/zsh ~/.zsh
+ln -s ~/ide_config/zshrc ~/.zshrc
+ln -s ~/ide_config/bash_profile ~/.bash_profile
+ln -s ~/ide_config/shell ~/.shell
+ln -s ~/ide_config/tmux.conf ~/.tmux.conf
+ln -s ~/ide_config/nvim ~/.config/nvim
+ln -s ~/ide_config/zsh/p10k.zsh ~/.p10k.zsh
 
 echo "installing zinit"
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
