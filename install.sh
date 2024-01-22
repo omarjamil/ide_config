@@ -1,6 +1,7 @@
 cd 
 mkdir config_backup
 mv .gitconfig .git_ignore .emacs .emacs.d .bashrc .bash_profile .vimrc .vim .bash config_backup
+mkdir .config
 
 # create softlinks 
 ln -s ~/ide_config/bash ~/.bash
