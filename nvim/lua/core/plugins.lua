@@ -25,7 +25,6 @@ require("lazy").setup({
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
-},
   {
     "vinnymeller/swagger-preview.nvim",
     run = "npm install -g swagger-ui-watcher",
@@ -39,4 +38,4 @@ require("lazy").setup({
     dependencies = { "nvim-lua/plenary.nvim" }
   },
   {'akinsho/toggleterm.nvim', version = "*", config = true}
-)
+})
