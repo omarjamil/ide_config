@@ -37,5 +37,19 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim", tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
-  {'akinsho/toggleterm.nvim', version = "*", config = true}
+  {'akinsho/toggleterm.nvim', version = "*",
+    config = true,
+    opts = {
+      direction = "horizontal",
+      cmd = "ToggleTerm",
+      open_mapping = [[<c-s>]],
+      },
+    keys = {
+      {
+        "<c-s>", "<cmd>ToggleTerm<cr>",
+        desc = "Toggle terminal",
+      },
+      { "<leader>0", "<Cmd>2ToggleTerm<Cr>",
+        desc = "Terminal #2" },
+    }}
 })
