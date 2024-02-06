@@ -1,5 +1,5 @@
 require("lazy").setup({
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000,},
   "tpope/vim-commentary",
   "mattn/emmet-vim",
   "nvim-tree/nvim-tree.lua",
@@ -37,19 +37,7 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim", tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
-  {"akinsho/toggleterm.nvim", version = "*",
-    config = true,
-    opts = {
-      direction = "horizontal",
-      cmd = "ToggleTerm",
-      open_mapping = [[<c-s>]],
-      },
-    keys = {
-      {
-        "<c-s>", "<cmd>ToggleTerm<cr>",
-        desc = "Toggle terminal",
-      },
-      { "<leader>0", "<Cmd>2ToggleTerm<Cr>",
-        desc = "Terminal #2" },
-    }}
+  {
+    import = "core.plugin_config.toggleterm",
+  },
 })
