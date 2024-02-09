@@ -26,12 +26,12 @@ require("lazy").setup({
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
   {
-    "vinnymeller/swagger-preview.nvim",
-    run = "npm install -g swagger-ui-watcher",
+    "ellisonleao/glow.nvim",
+    config = true, cmd = "Glow"
   },
   {
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
+    "vinnymeller/swagger-preview.nvim",
+    run = "npm install -g swagger-ui-watcher",
   },
   {
     "nvim-telescope/telescope.nvim", tag = "0.1.4",

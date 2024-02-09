@@ -30,7 +30,7 @@ alias projects='cd ~/home/Projects/'
 alias arm='env /usr/bin/arch -arm64 /bin/zsh --login'
 alias intel='env /usr/bin/arch -x86_64 /bin/zsh --login'
 alias ubu='ssh oj244@192.168.64.4'
-alias vim='/mnt/dev-data/oj/software/nvim-linux64/bin/nvim'
+# alias vim='~/bin/nvim'
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
 
 keyring() {
