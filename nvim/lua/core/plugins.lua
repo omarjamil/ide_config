@@ -40,4 +40,11 @@ require("lazy").setup({
   {
     import = "core.plugin_config.toggleterm",
   },
+  {
+   "NeogitOrg/neogit",
+   dependencies = {
+      "sindrets/diffview.nvim",        -- optional - Diff integration
+    },
+    config = true
+  }
 })
