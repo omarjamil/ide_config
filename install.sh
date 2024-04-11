@@ -14,15 +14,15 @@ ln -s ~/ide_config/tmux.conf ~/.tmux.conf
 ln -s ~/ide_config/nvim ~/.config/nvim
 ln -s ~/ide_config/zsh/p10k.zsh ~/.p10k.zsh
 
-echo "installing zinit"
-bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+# echo "installing zinit"
+# bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
-echo "installing zsh-autosuggestions"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# echo "installing zsh-autosuggestions"
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 echo "Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.local/fzf
-~/.local/fzf/install 
+~/.local/fzf/install --all
 
 echo "Installing Homebrew"
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
