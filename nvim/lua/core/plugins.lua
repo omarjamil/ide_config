@@ -46,5 +46,8 @@ require("lazy").setup({
       "sindrets/diffview.nvim",        -- optional - Diff integration
     },
     config = true
+  },
+  {
+    import = "core.plugin_config.telescope-undo",
   }
 })
