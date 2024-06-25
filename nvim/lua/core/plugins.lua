@@ -49,5 +49,16 @@ require("lazy").setup({
   },
   {
     import = "core.plugin_config.telescope-undo",
+  },
+  {
+    "jay-babu/mason-null-ls.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "williamboman/mason.nvim",
+      "nvimtools/none-ls.nvim",
+    },
+    config = function()
+      require("core.plugin_config.mason-ls") 
+    end,
   }
 })
