@@ -32,6 +32,7 @@ alias intel='env /usr/bin/arch -x86_64 /bin/zsh --login'
 alias ubu='ssh oj244@192.168.64.4'
 # alias vim='~/bin/nvim'
 alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v ~/.config/lazydocker:/.config/jesseduffield/lazydocker lazyteam/lazydocker'
+alias colimas='colima start --memory 8 --vm-type=vz --disk 50'
 
 keyring() {
     eval `keychain --eval $HOME/.ssh/id_ed25519`
