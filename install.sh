@@ -25,8 +25,8 @@ echo "Installing fzf"
 git clone --depth 1 https://github.com/junegunn/fzf.git $1/.local/fzf
 $1/.local/fzf/install --all
 
-echo "Installing Homebrew"
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# echo "Installing Homebrew"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "To install lazygit"
 echo "brew install jesseduffield/lazygit/lazygit"
