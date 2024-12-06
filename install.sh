@@ -30,4 +30,9 @@ $HOME/.local/fzf/install --all
 echo "To install lazygit"
 echo "brew install jesseduffield/lazygit/lazygit"
 # brew install jesseduffield/lazydocker/lazydocker 
+#
 
+# Starship
+# curl -sS https://starship.rs/install.sh | sh
+# ~/.zshrc
+# eval "$(starship init zsh)"
